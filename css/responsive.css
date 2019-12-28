@@ -1,0 +1,100 @@
+@media only screen and (max-width: 320px) {
+    
+    .memory-game {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .header{
+        height: 50px;
+        margin-bottom: 0;
+    }
+    .memory-card {
+        width: calc(25% - 15px);
+        height: calc(33.3333% - 10px);
+    }
+    #mistakes {
+        font-size: 15px;
+    }
+    #audio .mute {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:321px) and (max-width: 480px) {
+    .memory-game {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .header{
+        height: 50px;
+        margin-bottom: 5px;
+    }
+    .memory-card {
+        width: calc(25% - 15px);
+        height: calc(33.3333% - 10px);
+    }
+    #mistakes {
+        font-size: 20px;
+    }
+    #audio .mute {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 480px)and (max-width: 768px) {
+    .memory-game {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .header{
+        height: 70px;
+        margin-bottom: 7px;
+    }
+    .memory-card {
+        width: calc(25% - 15px);
+        height: calc(33.3333% - 10px);
+    }
+    #mistakes {
+        font-size: 30px;
+    }
+    #audio .mute {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width: 768px)and (max-width: 1024px) {
+    .memory-game {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .header{
+        height: 70px;
+        margin-bottom: 7px;
+    }
+    .memory-card {
+        width: calc(25% - 15px);
+        height: calc(33.3333% - 10px);
+    }
+    #mistakes {
+        font-size: 30px;
+    }
+    #audio .mute {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        font-size: 30px;
+    }
+}

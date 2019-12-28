@@ -14,7 +14,10 @@
   align-items: center;
   margin-bottom: 10px;
 }
-
+#mute{
+  font-size:30px;
+  color: white;
+}
 #audio {
   position: absolute;
   top: 5%;
@@ -39,7 +42,7 @@
 
 .memory-game {
   width: 800px;
-  height: 500px;
+  height: calc(100vh - 105px);
   margin: auto;
   display: flex;
   flex-wrap: wrap;
