@@ -15,7 +15,6 @@ function flipCard() {
   if (this === firstCard) return; //prevents clicking the same card twice
 
   this.classList.add('flip');
-
   if (!hasFlippedCard) {
     hasFlippedCard = true;
     firstCard = this;
@@ -41,22 +40,17 @@ function disableCards() {
   resetBoard();
   if (pairs === cards.length / 2) {
     setTimeout(function () {
-      var modal = document.getElementById("myModal");
-      var span = document.getElementsByClassName("close")[0];
+      let modal = document.getElementById("myModal");
       let field = document.querySelector('.memory-game');
+      let newGameBtn = document.querySelector('.newGame');
+      let endResult = document.getElementById('endMsg');
       field.style.display = "none";
       modal.style.display = "block";
-      span.onclick = function () {
-        modal.style.display = "none";
+      endResult.innerHTML = `You've made ${mistakes} mistakes play again if you can beat that!!!`;
+      newGameBtn.onclick = function () {
+        document.location.reload(true);
       }
     }, 2000);
-
-    // window.onclick = function (event) {
-    //   if (event.target == modal) {
-    //     modal.style.display = "none";
-    //   }
-    // }
-
   }
 }
 //if unmatch cards we unflip them and resets variables
@@ -67,7 +61,6 @@ function unflipCards() {
   setTimeout(() => {
     firstCard.classList.remove('flip');
     secondCard.classList.remove('flip');
-
     resetBoard();
   }, 1500);
 }
