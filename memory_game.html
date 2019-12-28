@@ -8,75 +8,83 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
 </head>
 
-<body style="height: 100vh;margin: 0;background: url('./images/gotbg2.jpg');background-size: cover; background-position: center;background-repeat: no-repeat;">
-    
+<body
+    style="height: 100vh;margin: 0;background: url('./images/gotbg2.jpg');background-size: cover; background-position: center;background-repeat: no-repeat;">
+
     <header class="header">
         <audio id="musicb" src="./music/got_theme.mp3" hidden loop></audio>
         <button id="audio"><i id="mute" class="fas fa-volume-mute" style='font-size:30px;color: white;'></i></button>
         <p id="mistakes"></p>
-        <!-- <button class="newGame">New Game</button> -->
     </header>
 
 
     <section class="memory-game">
         <div class="memory-card" data-got="cersei">
             <img class="front-face" src="./images/cersei.png" alt="cersei" />
-            <img class="back-face" src="./images/got.png" alt="card back" />
+            <img class="animated 1 zoomIn delay-1s back-face" src="./images/got.png" alt="card back" />
         </div>
         <div class="memory-card" data-got="cersei">
             <img class="front-face" src="./images/cersei.png" alt="cersei" />
-            <img class="back-face" src="./images/got.png" alt="card back" />
+            <img class="animated 1 zoomIn delay-1s back-face" src="./images/got.png" alt="card back" />
         </div>
 
         <div class="memory-card" data-got="jamie">
             <img class="front-face" src="./images/jamie.png" alt="jamie" />
-            <img class="back-face" src="./images/got.png" alt="card back" />
+            <img class="animated 1 zoomIn delay-1s back-face" src="./images/got.png" alt="card back" />
         </div>
         <div class="memory-card" data-got="jamie">
             <img class="front-face" src="./images/jamie.png" alt="jamie" />
-            <img class="back-face" src="./images/got.png" alt="card back" />
+            <img class="animated 1 zoomIn delay-1s back-face" src="./images/got.png" alt="card back" />
         </div>
 
         <div class="memory-card" data-got="tyrion">
             <img class="front-face" src="./images/tyrion.png" alt="tyrion" />
-            <img class="back-face" src="./images/got.png" alt="card back" />
+            <img class="animated 1 zoomIn delay-1s back-face" src="./images/got.png" alt="card back" />
         </div>
         <div class="memory-card" data-got="tyrion">
             <img class="front-face" src="./images/tyrion.png" alt="tyrion" />
-            <img class="back-face" src="./images/got.png" alt="card back" />
+            <img class="animated 1 zoomIn delay-1s back-face" src="./images/got.png" alt="card back" />
         </div>
 
         <div class="memory-card" data-got="eddard">
             <img class="front-face" src="./images/eddard.png" alt="eddard" />
-            <img class="back-face" src="./images/got.png" alt="card back" />
+            <img class="animated 1 zoomIn delay-1s back-face" src="./images/got.png" alt="card back" />
         </div>
         <div class="memory-card" data-got="eddard">
             <img class="front-face" src="./images/eddard.png" alt="eddard" />
-            <img class="back-face" src="./images/got.png" alt="card back" />
+            <img class="animated 1 zoomIn delay-1s back-face" src="./images/got.png" alt="card back" />
         </div>
 
         <div class="memory-card" data-got="jonsnow">
             <img class="front-face" src="./images/snow.png" alt="jonsnow" />
-            <img class="back-face" src="./images/got.png" alt="card back" />
+            <img class="animated 1 zoomIn delay-1s back-face" src="./images/got.png" alt="card back" />
         </div>
         <div class="memory-card" data-got="jonsnow">
             <img class="front-face" src="./images/snow.png" alt="jonsnow" />
-            <img class="back-face" src="./images/got.png" alt="card back" />
+            <img class="animated 1 zoomIn delay-1s back-face" src="./images/got.png" alt="card back" />
         </div>
         <div class="memory-card" data-got="daenarys">
             <img class="front-face" src="./images/daenarys.png" alt="daenarys" />
-            <img class="back-face" src="./images/got.png" alt="card back" />
+            <img class="animated 1 zoomIn delay-1s back-face" src="./images/got.png" alt="card back" />
         </div>
         <div class="memory-card" data-got="daenarys">
             <img class="front-face" src="./images/daenarys.png" alt="daenarys" />
-            <img class="back-face" src="./images/got.png" alt="card back" />
+            <img class="animated 1 zoomIn delay-1s back-face" src="./images/got.png" alt="card back" />
         </div>
 
-
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <button class="newGame">New Game</button>
+                <p>Some text in the Modal..</p>
+            </div>
+        </div>
     </section>
+    
     <footer class="footer">
 
 

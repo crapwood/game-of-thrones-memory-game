@@ -1,3 +1,4 @@
+
 const cards = document.querySelectorAll('.memory-card');
 cards.forEach(card => card.addEventListener('click', flipCard));
 
@@ -38,9 +39,24 @@ function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
   resetBoard();
-  if(pairs === cards.length/2 ){
-    let field = document.querySelector('.memory-game');
-    field.style.display = "none";
+  if (pairs === cards.length / 2) {
+    setTimeout(function () {
+      var modal = document.getElementById("myModal");
+      var span = document.getElementsByClassName("close")[0];
+      let field = document.querySelector('.memory-game');
+      field.style.display = "none";
+      modal.style.display = "block";
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+    }, 2000);
+
+    // window.onclick = function (event) {
+    //   if (event.target == modal) {
+    //     modal.style.display = "none";
+    //   }
+    // }
+
   }
 }
 //if unmatch cards we unflip them and resets variables
@@ -82,9 +98,10 @@ function resetBoard() {
       mus.className = 'fas fa-volume-mute';
       aud.pause();
     }
-  })})();
+  })
+})();
 
-function printMistakes(){
+function printMistakes() {
   let mistake = document.getElementById('mistakes');
   mistake.innerHTML = `Mistakes: ${mistakes}`;
 };
