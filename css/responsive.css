@@ -1,4 +1,29 @@
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 240px) {
+    .memory-game {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .header{
+        height: 50px;
+        margin-bottom: 0;
+    }
+    .memory-card {
+        width: calc(25% - 15px);
+        height: calc(33.3333% - 10px);
+    }
+    #mistakes {
+        font-size: 15px;
+    }
+    #audio .mute {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:240px) and (max-width: 320px) {
     
     .memory-game {
         width: 100vw;
